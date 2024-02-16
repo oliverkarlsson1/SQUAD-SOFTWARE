@@ -19,7 +19,6 @@ table_2 = {
 
 
 class Exercise1:
-
     def __init__(self, data):
         self.total_steps = np.array(data["N"])
         self.ree_a_ratio_squared = np.array(data["ree_a_ratio_squared"])
@@ -81,6 +80,7 @@ class Exercise2b:
         plt.savefig('exercise_2b.png')
         plt.show()
 
+
 class Exercise2c:
     def __init__(self, data, k, epsilon):
         self.E_min = -13 * epsilon
@@ -106,12 +106,11 @@ class Exercise2c:
         plt.show()
 
 
-# Instantiate and run each exercise
 exercise1 = Exercise1(table_1)
 exercise1.plot()
 
-exercise2 = Exercise2b(table_2, k, epsilon)
-exercise2.plot()
+exercise2b = Exercise2b(table_2, k, epsilon)
+exercise2b.plot()
 
-exercise3 = Exercise2c(table_2, k, epsilon)
-exercise3.plot()
+exercise2c = Exercise2c(table_2, k, epsilon)
+exercise2c.plot()
